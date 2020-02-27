@@ -1,0 +1,145 @@
+.socials__team {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    transform: translateX(-45%);
+    display: flex;
+    background: transparent;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.socials__element {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    background-color: $second;
+    border-right: 1px solid $first;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:hover {
+        background-color: $first;
+    }
+}
+
+.socials__link {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socials__facebook {
+    width: 13px;
+    height: 26px;
+    fill: $first;
+
+    &:hover {
+        fill: $white;
+    }
+}
+
+.socials__twitter {
+    width: 26px;
+    height: 22px;
+    fill: $first;
+
+    &:hover {
+        fill: $white;
+    }
+}
+
+.socials__pinterest {
+    width: 21px;
+    height: 26px;
+    fill: $first;
+
+    &:hover {
+        fill: $white;
+    }
+}
+
+.socials__instagramm {
+    width: 26px;
+    height: 26px;
+    fill: $first;
+
+    &:hover {
+        fill: $white;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.socials__facebook__mini {
+    width: 8px;
+    height: 16px;
+    fill: $fourth;
+}
+
+.socials__twitter__mini {
+    width: 16px;
+    height: 14px;
+    fill: $fourth;
+}
+
+.socials__instagram__mini {
+    width: 16px;
+    height: 16px;
+    fill: $fourth;
+}
+
+.socials__pinterest__mini {
+    width: 13px;
+    height: 16px;
+    fill: $fourth;
+}
+
+.socials__google__mini {
+    width: 16px;
+    height: 14px;
+    fill: $fourth;
+}
+
+.socials__youtube__mini {
+    width: 16px;
+    height: 12px;
+    fill: $fourth;
+}
+
+.socials__dribbble__mini {
+    width: 16px;
+    height: 16px;
+    fill: $fourth;
+}
+
+.socials__tumblr__mini {
+    width: 10px;
+    height: 16px;
+    fill: $fourth;
+}
+
+@media (max-width: 1500px) {
+
+    .socials__element {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .socials__element {
+        width: 58px;
+        height: 58px;
+    }
+}

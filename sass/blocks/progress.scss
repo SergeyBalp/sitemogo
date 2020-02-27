@@ -1,0 +1,92 @@
+.progress {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    transition-duration: 800ms;
+    transition-property: all;
+}
+
+.progress__element {
+    grid-column: span 3;
+    z-index: 5;
+    margin-right: 28px;
+    transition-duration: 800ms;
+    transition-property: all;
+
+
+
+    span {
+        font-size: 24px;
+        color: $white;
+        opacity: 0.5;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .progress__line {
+            &::before {
+                display: block;
+            }
+        }
+
+        span,
+        .progress__line,
+        .progress__link {
+            opacity: 1;
+        }
+    }
+}
+
+.progress__line {
+    background-color: $white;
+    opacity: 0.5;
+    width: 100%;
+    height: 3px;
+    z-index: 5;
+    margin-bottom: 25px;
+    transition-duration: 500ms;
+    transition-property: opacity;
+
+
+    &::before {
+        background-color: $first;
+        content: '';
+        width: 70px;
+        height: 5px;
+        display: none;
+        z-index: 5;
+        transition-duration: 500ms;
+        transition-property: all;
+    }
+}
+
+.progress__link {
+    text-decoration: none;
+    font-size: 16px;
+    color: $white;
+    opacity: 0.502;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+    transition-duration: 500ms;
+    transition-property: opacity;
+}
+
+@media (max-width:768px) {
+    .progress {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .progress__element {
+        margin-top: 12%;
+        margin-left: 28px;
+    }
+}

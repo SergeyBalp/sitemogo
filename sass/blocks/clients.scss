@@ -1,0 +1,127 @@
+$bgClient: #ccc;
+
+.clientsAbout {
+    background: url('/img/matterhorn.png') top center no-repeat;
+    background-image: cover;
+    background-origin: content-box;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, .8);
+    }
+}
+
+.clientsAbout__title {
+    margin-top: 0;
+}
+
+.clientsAbout__heading {
+    padding-top: 6%;
+    position: relative;
+}
+
+
+.clientsAbout__items {
+    padding-bottom: 2.8%;
+    padding-left: 0;
+    margin-top: 4.5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.clientsAbout__element {
+    flex-basis: 49%;
+    margin-bottom: 5.5%;
+}
+
+.clientsAbout__image {
+    margin: auto 35px;
+    float: left;
+}
+
+.clientsAbout__name {
+    padding-top: 12px;
+    font-size: 14px;
+    color: $colorTitle;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    overflow: hidden;
+}
+
+.clientsAbout__job {
+    margin-top: 6px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: $colorTitle;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+
+
+    &::after {
+        content: '';
+        display: block;
+        left: 0;
+        margin-top: 13px;
+        background-color: $first;
+        width: 60px;
+        height: 3px;
+    }
+}
+
+.clientsAbout__text {
+    margin-top: 17px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: $colorText;
+    line-height: 1.6;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+
+    .clientsAbout__items {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .clientsAbout {
+        background: none;
+        background-color: $bgClient;
+    }
+
+    .clientsAbout__element {
+        flex-basis: 98%;
+    }
+
+    .clientsAbout__items {
+        margin-top: 8%;
+    }
+}
+
+
+@media (max-width: 528px) {
+    .clientsAbout__items {
+        display: block;
+    }
+}

@@ -1,0 +1,40 @@
+.map {
+    @include min-max($min-width, $max-width, $padding);
+    background-color: rgba(255, 255, 255, .3);
+
+    position: relative;
+
+    .open__map {
+        font-size: 24px;
+        color: rgb(243, 129, 129);
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 55%;
+        z-index: 199;
+    }
+
+    .span__map {
+        position: absolute;
+        background-color: rgb(243, 129, 129);
+        width: 60px;
+        height: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 75%;
+        z-index: 199;
+    }
+
+    #map {
+        min-height: 200px;
+    }
+}
+
+
+
+
+// <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+// <link rel="icon" href="/favicon.ico" type="image/x-icon">

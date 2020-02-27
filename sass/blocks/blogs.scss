@@ -1,0 +1,161 @@
+$colorQuantity:#b9b9b9;
+
+
+
+.blog__slogan {
+    margin-bottom: 3%;
+}
+
+.blog__elements {
+
+    display: flex;
+    justify-content: space-between;
+
+    // position: relative;
+}
+
+.blog__item {
+
+
+    flex-basis: 31.8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.blog__image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.blog__data {
+    position: absolute;
+    bottom: 15px;
+    left: -10px;
+    width: 60px;
+    height: 70px;
+    background-color: $fourth;
+
+}
+
+.blog__number {
+    margin-top: 10px;
+    font-size: 30px;
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+.blog__month {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: $white;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+
+.blog__image>img {
+    display: block;
+    max-width: 100%;
+}
+
+.blog__info {
+    margin-bottom: 4%;
+    font-size: 14px;
+    color: $colorTitle;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.blog__description {
+    margin-bottom: 5%;
+
+    // margin-bottom: auto;
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: $colorText;
+    line-height: 1.6;
+    text-align: left;
+
+}
+
+
+.blog__line {
+    @include line();
+
+    padding-bottom: 8%;
+
+}
+
+.blog__link {
+    text-decoration: none;
+}
+
+.blog__views {
+
+    width: 20px;
+    height: 12px;
+    fill: $fourth;
+    text-decoration: none;
+
+}
+
+.blog__comments {
+    position: relative;
+    top: 3px;
+    width: 16px;
+    height: 15px;
+    fill: $fourth;
+}
+
+.blog__quantity {
+    margin-right: 18px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: $colorQuantity;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+@media (max-width: 980px) {
+    .blog__elements {
+        flex-wrap: wrap;
+    }
+
+    .blog__item {
+
+        flex-basis: 48%;
+        margin-bottom: 5%;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .blog__elements {
+        justify-content: center;
+    }
+
+    .blog__item {
+
+        flex-basis: 85%;
+
+    }
+
+}
