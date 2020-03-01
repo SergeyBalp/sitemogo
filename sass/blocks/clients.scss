@@ -1,9 +1,9 @@
 $bgClient: #ccc;
 
 .clientsAbout {
-    background: url('/img/matterhorn.png') top center no-repeat;
+    background: url('/img/matterhorn.png') center center no-repeat;
     background-image: cover;
-    background-origin: content-box;
+    // background-origin: content-box;
     position: relative;
 
     &::before {
@@ -121,7 +121,32 @@ $bgClient: #ccc;
 
 
 @media (max-width: 528px) {
+    .clientsAbout__image {
+        display: block;
+        float: none;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .clientsAbout__name,
+    .clientsAbout__job {
+        text-align: center;
+    }
+
+    .clientsAbout__job {
+        &::after {
+            // left: 50%;
+            // transform: translateX(-50%);
+            margin: 13px auto;
+        }
+    }
+
+
     .clientsAbout__items {
+        // flex-direction: column;
         display: block;
     }
 }

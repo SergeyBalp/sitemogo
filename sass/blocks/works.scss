@@ -29,7 +29,7 @@
         position: absolute;
         display: none;
         top: 43%;
-        // left: 46%;
+
         left: 50%;
         transform: translateX(-50%);
         background: url('/img/PICTURE_1.png') no-repeat;
@@ -170,8 +170,6 @@
 .works__arrow {
     @include arrow();
 }
-
-
 
 .works__image {
     display: block;
@@ -335,18 +333,17 @@
     .works__speach__text {
         font-size: 18px;
     }
+
 }
 
 @media (max-width: 600px) {
     .works__img {
 
         .works__text__creative {
-
             font-size: 10px;
         }
 
         .works__newText {
-
             font-size: 10px;
         }
     }
@@ -355,19 +352,16 @@
 
 @media (max-width: 520px) {
     .works__pictures {
-
         grid-template-columns: 1fr;
     }
 
     .works__img {
 
         .works__text__creative {
-
             font-size: 14px;
         }
 
         .works__newText {
-
             font-size: 14px;
         }
     }
@@ -377,14 +371,11 @@
     .works__img {
 
         .works__text__creative {
-
             font-size: 12px;
         }
 
         .works__newText {
-
             font-size: 12px;
         }
     }
-
 }

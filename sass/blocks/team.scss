@@ -51,7 +51,6 @@ $colorJob: #999999;
             display: block;
         }
     }
-
 }
 
 .team__person__element {
@@ -83,11 +82,9 @@ $colorJob: #999999;
 .team__img {
     max-width: 100%;
 
-}
-
-.team__img>img {
-    max-width: 100%;
-    display: block;
+    img {
+        width: 100%;
+    }
 }
 
 .team__person__name {

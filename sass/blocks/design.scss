@@ -1,9 +1,6 @@
 .design {
-
-    background: url('/img/bgDesign.jpg') top center no-repeat;
+    background: url('/img/bgDesign.jpg') center center no-repeat;
     background-image: cover;
-    background-size: 100% 100%;
-    background-origin: content-box;
     position: relative;
 
     &::before {
@@ -48,11 +45,19 @@
 .design__smartfonSmall {
 
     position: absolute;
-    top: 54%;
+    bottom: -7%;
     left: 55.2%;
     width: 14.5%;
 }
 
 .design__smartfonSmall>img {
+
     max-width: 100%;
+}
+
+@media (max-width:1200px) {
+    .design__smartfonSmall {
+        bottom: -5%;
+    }
+
 }

@@ -1,9 +1,8 @@
 .header {
     margin: 0;
     padding: 0;
-    background: url('/img/fotoHeader.jpg') center top no-repeat;
+    background: url('/img/fotoHeader.jpg') center center no-repeat;
     background-size: cover;
-    background-origin: content-box;
     position: relative;
 
     &::before {
@@ -51,14 +50,12 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .header__menu-one,
 .header__menu-two {
     margin: 0;
     padding: 0;
-
 }
 
 .header__element {
@@ -72,35 +69,7 @@
 }
 
 .menu__hamburger {
-    position: absolute;
-    z-index: 99;
-    width: 32px;
-    height: 25px;
-
     display: none;
-    border: none;
-    background-color: transparent;
-    appearance: none;
-    cursor: pointer;
-    padding: 0;
-    right: 10px;
-    top: 20px;
-
-    &::before,
-    &::after {
-        height: 3px;
-        display: block;
-        background: $white;
-        content: '';
-    }
-
-    span {
-        height: 3px;
-        display: block;
-        background: #fff;
-        margin: 8px 0;
-
-    }
 }
 
 .header__cart {
@@ -285,21 +254,50 @@
     }
 
     .menu__hamburger {
-        display: block;
+        position: absolute;
+        z-index: 99;
+        width: 36px;
         outline: none;
+        display: block;
+        border: none;
+        background-color: transparent;
+        appearance: none;
+        cursor: pointer;
+        padding: 0;
+        right: 10px;
+        top: 20px;
+
+        span {
+            height: 2px;
+            display: block;
+            background: $white;
+            margin: 8px 0;
+        }
+
+        &::before,
+        &::after {
+            height: 2px;
+            display: block;
+            background: $white;
+            content: '';
+        }
     }
 
-    .menu--active .menu__hamburger {
-        span {
-            display: none;
-        }
+    .menu--active {
+        .menu__hamburger {
+            top: 30px;
 
-        &::after {
-            transform: rotate(45deg);
-        }
+            span {
+                display: none;
+            }
 
-        &::before {
-            transform: rotate(-45deg) translate(-3px, 1px);
+            &::after {
+                transform: rotate(45deg);
+            }
+
+            &::before {
+                transform: rotate(-45deg) translate(-2px, 1px);
+            }
         }
     }
 
@@ -317,7 +315,6 @@
 
     .header__logo {
         margin: 2% auto;
-        // margin-bottom: 2%;
     }
 
     .header__title {
@@ -328,5 +325,4 @@
     .header__slogan {
         font-size: 42px;
     }
-
 }

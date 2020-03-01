@@ -15,16 +15,16 @@ $colorQuantity:#b9b9b9;
 }
 
 .blog__item {
-
-
     flex-basis: 31.8%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-}
+    a {
+        text-decoration: none;
+    }
 
+}
 
 .blog__image {
     position: relative;
@@ -67,7 +67,6 @@ $colorQuantity:#b9b9b9;
 
 }
 
-
 .blog__image>img {
     display: block;
     max-width: 100%;
@@ -81,12 +80,12 @@ $colorQuantity:#b9b9b9;
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
+
+
 }
 
 .blog__description {
     margin-bottom: 5%;
-
-    // margin-bottom: auto;
     font-size: 15px;
     font-family: 'Roboto';
     color: $colorText;
@@ -98,7 +97,6 @@ $colorQuantity:#b9b9b9;
 
 .blog__line {
     @include line();
-
     padding-bottom: 8%;
 
 }
