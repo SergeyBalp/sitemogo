@@ -13,8 +13,8 @@
 <body>
     <div class="container">
 
-        <div id="arrowTop" hidden>
-            <img src="img/ARROW-up.png" alt="">
+        <div class="scrollToTop" hidden>
+            <img src="img/ARROW-up.png" alt="arrow_up">
         </div>
         <header class="header">
             <div class="header__wrap wrap">
@@ -30,19 +30,19 @@
 
                     <ul class="menu header__menu-one">
                         <li class="menu__element">
-                            <a href="#" class="menu__link">about</a>
+                            <a href="#about" class="menu__link">about</a>
                         </li>
                         <li class="menu__element">
-                            <a href="#" class="menu__link">service</a>
+                            <a href="#services" class="menu__link">service</a>
                         </li>
                         <li class="menu__element">
-                            <a href="#" class="menu__link">work</a>
+                            <a href="#work" class="menu__link">work</a>
                         </li>
                         <li class="menu__element">
-                            <a href="#" class="menu__link">blog</a>
+                            <a href="#blog" class="menu__link">blog</a>
                         </li>
                         <li class="menu__element">
-                            <a href="#" class="menu__link">contact</a>
+                            <a href="#contact" class="menu__link">contact</a>
                         </li>
                     </ul>
                     <ul class="menu header__menu-two">
@@ -57,7 +57,6 @@
                         </li>
                         <li class="header__element">
                             <a href="#" class="menu__link">
-
                                 <svg class="header__glass">
                                     <use xlink:href="/img/symbol/sprite.svg#GLASS">
                                     </use>
@@ -100,7 +99,7 @@
                 </ul>
             </div>
         </header>
-        <section class="story">
+        <section class="story" id="about">
             <div class="story__about wrap">
                 <h3 class="story__title block__title">What we do</h3>
                 <h2 class="story__slogan block__slogan">Story about us</h2>
@@ -158,7 +157,7 @@
                 </ul>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="services__heading wrap">
                 <h3 class="services__title block__title">We work with</h3>
                 <h2 class="services__slogan block__slogan">Amazing Services</h2>
@@ -260,14 +259,14 @@
                     <h3 class="design__title block__title">For all devices</h3>
                     <h2 class="design__slogan  block__slogan">Unique design</h2>
                 </div>
-                <div class="design__fotos wrap">
-                    <div class="design__smartfonBig">
-                        <img src="/img/smartfon.png" alt="tablet_pc">
+                <div class="design__photos wrap">
+                    <div class="design__tablet">
+                        <img src="/img/tablet.png" alt="tablet_pc">
                     </div>
                 </div>
             </div>
-            <div class="design__smartfonSmall">
-                <img src="/img/smartfonLitle.png" alt="smartphone">
+            <div class="design__smartphone">
+                <img src="/img/smartphone.png" alt="smartphone">
             </div>
         </section>
         <section class="doing">
@@ -563,7 +562,7 @@
                 </div>
             </div>
         </section>
-        <section class="works">
+        <section class="works" id="work">
             <div class="works__heading wrap">
                 <h3 class="works__title block__title">What we do</h3>
                 <h2 class="works__slogan block__slogan">some of our work</h2>
@@ -572,7 +571,7 @@
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div class="works__pictures">
-                <h2 class="visually-hidden">Примеры фоторабот</h2>
+                <h2 class="visually-hidden">examples of pictures</h2>
 
                 <a class="works__img works__img--first" href="#">
                     <img src="img/works_foto1.jpg" alt="picture1">
@@ -688,7 +687,7 @@
                 </li>
             </ul>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="blog__heading ">
                 <h3 class="blog__title block__title">Our stories</h3>
                 <h2 class="blog__slogan block__slogan">Latest blog</h2>
@@ -800,7 +799,7 @@
             <div id="map">
             </div>
         </section>
-        <section class="footer">
+        <section class="footer" id="contact">
             <div class="footer__wrap wrap">
                 <div class="footer__mogo">
                     <div class="footer__logo">MoGo</div>

@@ -17,32 +17,30 @@
 .design__heading {
     position: relative;
     padding-top: 1%;
-
 }
 
-.design__fotos {
+.design__photos {
     padding-top: 0;
     position: relative;
     padding-left: 17.5%;
-
 }
 
 .design__main {
     position: relative;
 }
 
-.design__smartfonBig {
+.design__tablet {
     margin: 0;
     padding: 0;
     width: 55.5%;
 }
 
-.design__smartfonBig>img {
+.design__tablet>img {
     max-width: 100%;
     display: block;
 }
 
-.design__smartfonSmall {
+.design__smartphone {
 
     position: absolute;
     bottom: -7%;
@@ -50,14 +48,12 @@
     width: 14.5%;
 }
 
-.design__smartfonSmall>img {
-
+.design__smartphone>img {
     max-width: 100%;
 }
 
 @media (max-width:1200px) {
-    .design__smartfonSmall {
+    .design__smartphone {
         bottom: -5%;
     }
-
 }
