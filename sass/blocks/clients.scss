@@ -3,7 +3,6 @@ $bgClient: #ccc;
 .clientsAbout {
     background: url('/img/matterhorn.png') center center no-repeat;
     background-image: cover;
-    // background-origin: content-box;
     position: relative;
 
     &::before {
