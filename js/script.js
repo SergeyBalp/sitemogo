@@ -207,6 +207,16 @@ window.addEventListener('DOMContentLoaded', function () {
                 $(this).attr('style', 'display: none !important;');
             });
         });
+
+        $('.works__img').magnificPopup({
+            type: 'image'
+            // other options
+        });
+
+
+
+
+
     });
 
 
